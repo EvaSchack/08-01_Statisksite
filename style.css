@@ -1,0 +1,42 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.category-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+.category-body {
+  padding: 1rem;
+}
+
+.category-list a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background-color: #ffeded;
+  border-radius: 5px;
+
+  font-size: 1.2rem;
+  height: 5rem;
+}
+
+.category-list a:hover {
+  background-color: #fcd2d2;
+}
+
+h2 {
+  text-align: center;
+  margin: 1rem;
+}
