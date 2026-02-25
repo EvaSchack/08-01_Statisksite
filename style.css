@@ -38,9 +38,10 @@ a {
   background-color: #fcd2d2;
 }
 
-h2 {
+h1 {
   text-align: center;
   margin: 1rem;
+  font-family: "Oswald", sans-serif;
 }
 
 /***** PRODUKT LISTE *****/
@@ -114,4 +115,62 @@ img {
 /***** PRODUKT SIDE *****/
 .product-body {
   padding: 1rem;
+}
+
+.product-detail {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 2rem;
+}
+
+.product-image {
+  width: 80%;
+  justify-self: center;
+}
+
+h2.product-name {
+  text-align: left;
+  font-size: 28px;
+  margin-bottom: 2rem;
+  font-family: "Oswald", sans-serif;
+}
+
+.product-type,
+.product-category,
+.product-price,
+.stock {
+  text-align: left;
+  font-size: 20px;
+
+  margin-bottom: 1rem;
+}
+
+.back-btn {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 10px 20px;
+  background-color: #ffeded;
+  color: black;
+  border-radius: 5px;
+  width: 170px;
+
+  font-family: "Oswald", sans-serif;
+}
+.back-btn:hover {
+  background-color: #fcd2d2;
+}
+
+.buy-btn {
+  margin-top: 2rem;
+  padding: 10px 20px;
+  background-color: #cfc69a;
+  color: black;
+  border-radius: 5px;
+  border: none;
+  width: 170px;
+
+  font-family: "Oswald", sans-serif;
+}
+.buy-btn:hover {
+  background-color: #b9b188;
 }
