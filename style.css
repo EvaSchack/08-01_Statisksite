@@ -10,6 +10,8 @@ a {
   color: black;
 }
 
+/***** KATEGORI SIDE *****/
+
 .category-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -39,4 +41,77 @@ a {
 h2 {
   text-align: center;
   margin: 1rem;
+}
+
+/***** PRODUKT LISTE *****/
+.product-body {
+  padding: 1rem;
+}
+.product-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+}
+
+/* Info */
+.product-info {
+  padding-top: 20px;
+}
+
+.brand {
+  font-size: 14px;
+  color: rgb(122, 113, 113);
+}
+
+.name {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.price {
+  font-size: 16px;
+  color: #000;
+}
+
+.sale {
+  margin: 5px 0;
+  font-size: 16px;
+  color: rgb(191, 48, 48);
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+}
+.price-sale {
+  font-size: 16px;
+  text-decoration: line-through;
+}
+
+.image-wrapper {
+  position: relative; /* VIGTIG */
+  opacity: 60%;
+}
+
+/* Sold out box*/
+.sold-out {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+
+  color: rgb(255, 255, 255);
+  padding: 15px 25px;
+  font-size: 24px;
+
+  background: rgba(43, 22, 22, 0.5);
+}
+
+/***** PRODUKT SIDE *****/
+.product-body {
+  padding: 1rem;
 }
