@@ -4,6 +4,79 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Product List</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body class="product-list-body">
+    <header class="logo">
+      <a href="index.html"><img class="logo-img" src="/billeder/fashion-logo.webp" alt="logo" /></a>
+    </header>
+
+    <main>
+      <h1>PRODUCT LIST</h1>
+
+      <section class="product-list">
+        <section class="card">
+          <a href="product.html">
+            <img class="product-image" src="/billeder/sokker.webp" alt="sokker" />
+
+            <div class="product-info">
+              <div class="brand">Nora</div>
+              <div class="name">Knitted socks</div>
+              <div class="price">DKK 599,-</div>
+            </div>
+          </a>
+        </section>
+
+        <section class="sold-out-card">
+          <a href="product.html">
+            <div class="image-wrapper">
+              <img class="product-image" src="/billeder/stribet.webp" alt="stribet trøje" />
+              <div class="sold-out">Sold Out</div>
+            </div>
+
+            <div class="product-info">
+              <div class="brand">My</div>
+              <div class="name">Striped shirt</div>
+              <div class="price">DKK 599,-</div>
+            </div>
+          </a>
+        </section>
+
+        <section classs="sale-card">
+          <a href="product.html">
+            <img class="product-image" src="/billeder/strik.webp" alt="strik trøje" />
+
+            <div class="product-info">
+              <div class="brand">Nanna</div>
+              <div class="name">Knitted sweater</div>
+              <div class="price-sale">DKK 599,-</div>
+              <div class="sale">
+                <span class="price-text">NOW DKK 499,-</span>
+                <span class="discount">10%</span>
+              </div>
+            </div>
+          </a>
+        </section>
+
+        <section class="sale-soldout-card">
+          <a href="product.html">
+            <div class="image-wrapper">
+              <img class="product-image" src="/billeder/taske.webp" alt="taske" />
+              <div class="sold-out">Sold Out</div>
+            </div>
+
+            <div class="product-info">
+              <div class="brand">Merle</div>
+              <div class="name">Crochet net</div>
+              <div class="price-sale">DKK 599,-</div>
+              <div class="sale">
+                <span class="price-text">NOW DKK 499,-</span>
+                <span class="discount">10%</span>
+              </div>
+            </div>
+          </a>
+        </section>
+      </section>
+    </main>
+  </body>
 </html>

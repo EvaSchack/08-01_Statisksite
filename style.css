@@ -1,0 +1,201 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #3e2719;
+}
+
+/***** KATEGORI SIDE *****/
+
+.category-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+.category-body {
+  padding: 1rem;
+  color: #3e2719;
+}
+
+.category-list a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background-color: #ffeded;
+  border-radius: 5px;
+
+  font-size: 1.2rem;
+  height: 5rem;
+}
+
+.category-list a:hover {
+  background-color: #fcd2d2;
+}
+
+h1 {
+  text-align: center;
+  margin: 1rem;
+  font-family: "Oswald", sans-serif;
+  color: #3e2719;
+}
+
+/***** PRODUKT LISTE *****/
+.product-list-body {
+  padding: 1rem;
+}
+.product-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+.product-image {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+}
+
+/* Info */
+.product-info {
+  padding-top: 20px;
+}
+
+.brand {
+  font-size: 14px;
+  color: rgb(122, 113, 113);
+}
+
+.name {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.price {
+  font-size: 16px;
+  color: #000;
+}
+
+.sale {
+  margin: 5px 0;
+  font-size: 16px;
+  color: rgb(191, 48, 48);
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+}
+.price-sale {
+  font-size: 16px;
+  text-decoration: line-through;
+}
+
+.image-wrapper {
+  position: relative; /* VIGTIG */
+  opacity: 60%;
+}
+
+/* Sold out box*/
+.sold-out {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+
+  color: rgb(255, 255, 255);
+  padding: 15px 25px;
+  font-size: 24px;
+
+  background: rgba(43, 22, 22, 0.5);
+}
+
+/***** PRODUKT SIDE *****/
+.product-body {
+  padding: 1rem;
+  margin-left: 1rem;
+}
+
+.product-detail {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 2rem;
+}
+
+.product-detail-image {
+  width: 80%;
+}
+
+h2.product-name {
+  text-align: left;
+  font-size: 28px;
+  margin-bottom: 2rem;
+  font-family: "Oswald", sans-serif;
+  color: #3e2719;
+}
+
+.product-type,
+.product-category,
+.product-price,
+.stock {
+  text-align: left;
+  font-size: 20px;
+  color: #3e2719;
+  margin-bottom: 1rem;
+}
+
+.back-btn {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 10px 20px;
+  background-color: #ffeded;
+  color: black;
+  border-radius: 5px;
+  width: 170px;
+
+  font-family: "Oswald", sans-serif;
+  color: #3e2719;
+}
+.back-btn:hover {
+  background-color: #fcd2d2;
+}
+
+.buy-btn {
+  margin-top: 2rem;
+  padding: 10px 20px;
+  background-color: #cfc69a;
+  color: black;
+  border-radius: 5px;
+  border: none;
+  width: 170px;
+
+  font-family: "Oswald", sans-serif;
+  color: #3e2719;
+}
+.buy-btn:hover {
+  background-color: #b9b188;
+}
+
+.logo-img {
+  width: 200px;
+  height: auto;
+}
+
+@media (max-width: 800px) {
+  .category-list {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .product-list {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .product-detail {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
