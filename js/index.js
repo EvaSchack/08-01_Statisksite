@@ -11,6 +11,7 @@ function showData(data) {
   console.log(data);
   data.forEach((fisk) => {
     container.innerHTML += `<a href="productlist.html?category=${fisk.category}">${fisk.category}</a>`;
+    container.innterHTML = markup;
   });
 }
 getData();

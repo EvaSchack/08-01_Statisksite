@@ -97,7 +97,7 @@ h1 {
 }
 
 .image-wrapper {
-  position: relative; /* VIGTIG */
+  position: relative;
   opacity: 60%;
 }
 
