@@ -12,7 +12,7 @@ a {
 
 /***** KATEGORI SIDE *****/
 
-.category-list {
+#link-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 1rem;
@@ -23,7 +23,7 @@ a {
   color: #3e2719;
 }
 
-.category-list a {
+#link-container a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -35,7 +35,7 @@ a {
   height: 5rem;
 }
 
-.category-list a:hover {
+#link-container a:hover {
   background-color: #fcd2d2;
 }
 
