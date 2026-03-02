@@ -7,11 +7,19 @@ function getData() {
     .then((respons) => respons.json())
     .then(showData);
 }
+// function showData(data) {
+//   console.log(data);
+//   data.forEach((fisk) => {
+//     container.innerHTML += `<a href="productlist.html?category=${fisk.category}">${fisk.category}</a>`;
+//     container.innterHTML = markup;
+//   });
+// }
+
 function showData(data) {
-  console.log(data);
+  let markup = "";
   data.forEach((fisk) => {
-    container.innerHTML += `<a href="productlist.html?category=${fisk.category}">${fisk.category}</a>`;
-    container.innterHTML = markup;
+    markup += `<a href="productlist.html?category=${fisk.category}">${fisk.category}</a>`;
   });
+  container.innerHTML = markup;
 }
 getData();

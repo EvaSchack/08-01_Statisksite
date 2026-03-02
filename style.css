@@ -67,12 +67,12 @@ h1 {
   padding-top: 20px;
 }
 
-.brand {
+p {
   font-size: 14px;
   color: rgb(122, 113, 113);
 }
 
-.name {
+h3 {
   font-size: 18px;
   font-weight: bold;
   margin: 5px 0;
