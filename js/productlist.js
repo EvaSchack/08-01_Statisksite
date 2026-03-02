@@ -1,6 +1,8 @@
+const klikkategori = new URLSearchParams(window.location.search).get("category");
+
 const container = document.querySelector(".product-list");
 
-const endpoint = `https://kea-alt-del.dk/t7/api/products`;
+const endpoint = `https://kea-alt-del.dk/t7/api/products?category=${klikkategori}`;
 
 function getData() {
   fetch(endpoint)
@@ -19,8 +21,8 @@ function showData(json) {
             </div>
 
             <div class="product-info">
-              <div class="brand">${element.brandname}</div>
-              <div class="name">${element.productdisplayname}</div>
+              <p class="brand">${element.brandname}</p>
+              <h3 class="name">${element.productdisplayname}</h3>
               <div class="price-sale">DKK 599,-</div>
               <div class="sale">
                 <span class="price-text">NOW DKK 499,-</span>
