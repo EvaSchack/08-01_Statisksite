@@ -14,7 +14,7 @@ function showData(json) {
   let markup = "";
   json.forEach((element) => {
     console.log(element);
-    markup += ` <a href="product.html?id=${element.id}">
+    markup += ` <a href="productdetails.html?id=${element.id}">
             <div class="image-wrapper">
               <img class="product-image" src="https://kea-alt-del.dk/t7/images/webp/640/${element.id}.webp" alt="taske" />
               <div class="sold-out">Sold Out</div>
