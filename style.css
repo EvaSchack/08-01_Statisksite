@@ -47,9 +47,9 @@ a {
 }
 
 #link-container a:hover {
-  border-color: #988e42;
+  border-color: #cfd9e4;
 
-  border-width: 2px;
+  border-width: 2.5px;
   border-style: solid;
 
   color: #3e2719;
@@ -63,10 +63,32 @@ h1 {
 }
 
 /***** PRODUKT LISTE KNAPPER *****/
+.sorter-buttons {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.sorterBtn {
+  padding: 10px 20px;
+  background-color: #cfc69a;
+  border-radius: 5px;
+  border: none;
+
+  width: 163px;
+
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  color: #3e2719;
+}
+.sorterBtn:hover {
+  background-color: #b9b188;
+}
 
 .filterBtn {
   margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   padding: 10px 20px;
   background-color: #dde6ed;
   border-radius: 5px;

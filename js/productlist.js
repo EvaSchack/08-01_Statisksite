@@ -73,6 +73,30 @@ function filter(e) {
 // Bind filter knapper
 document.querySelectorAll(".filterBtn").forEach((button) => button.addEventListener("click", filter));
 
+// Sort produkter
+function sort(e) {
+  const valgt = e.target.dataset.price;
+
+  if (valgt === "up") {
+    allData.sort((a, b) => a.price - b.price);
+  } else if (valgt === "down") {
+    allData.sort((a, b) => b.price - a.price);
+  } else {
+    const valgt = e.target.dataset.text;
+    if (valgt === "az") {
+      allData.sort((a, b) => a.productdisplayname.localeCompare(b.productdisplayname, "da"));
+    } else {
+      allData.sort((a, b) => b.productdisplayname.localeCompare(a.productdisplayname, "da"));
+    }
+  }
+
+  showProducts(allData);
+}
+// Bind sort knapper
+document.querySelectorAll(".sorterBtn").forEach((button) => button.addEventListener("click", sort));
+
+// Filter produkter
+
 getData();
 
 /* const klikkategori = new URLSearchParams(window.location.search).get("category");
