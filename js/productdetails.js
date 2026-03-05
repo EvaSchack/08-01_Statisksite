@@ -28,5 +28,8 @@ function showData(json) {
         </div>
       </section>`;
 }
-
+document.querySelector(".back-btn").addEventListener("click", (e) => {
+  e.preventDefault();
+  history.back();
+});
 getData();

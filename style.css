@@ -3,11 +3,17 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: #fefefe;
 }
 
 a {
   text-decoration: none;
   color: #3e2719;
+}
+
+.logo-img {
+  width: 200px;
+  height: auto;
 }
 
 /***** KATEGORI SIDE *****/
@@ -20,23 +26,33 @@ a {
 
 .category-body {
   padding: 1rem;
-  color: #3e2719;
 }
 
 #link-container a {
+  color: #3e2719;
+  font-family: "Oswald", sans-serif;
+
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 1rem;
-  background-color: #ffeded;
+  background-color: none;
   border-radius: 5px;
+  border-color: #3e2719;
+  border-width: 1px;
+  border-style: solid;
 
   font-size: 1.2rem;
   height: 5rem;
 }
 
 #link-container a:hover {
-  background-color: #fcd2d2;
+  border-color: #988e42;
+
+  border-width: 2px;
+  border-style: solid;
+
+  color: #3e2719;
 }
 
 h1 {
@@ -44,6 +60,34 @@ h1 {
   margin: 1rem;
   font-family: "Oswald", sans-serif;
   color: #3e2719;
+}
+
+/***** PRODUKT LISTE KNAPPER *****/
+
+.filterBtn {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 10px 20px;
+  background-color: #dde6ed;
+  border-radius: 5px;
+  border: none;
+
+  width: 163px;
+
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  color: #3e2719;
+}
+.filterBtn:hover {
+  background-color: #cfd9e4;
+
+  color: #3e2719;
+}
+
+.filter-buttons {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
 }
 
 /***** PRODUKT LISTE *****/
@@ -60,6 +104,11 @@ h1 {
   width: 100%;
   aspect-ratio: 4 / 5;
   object-fit: cover;
+
+  transition: transform 0.3s ease;
+}
+.product-image:hover {
+  transform: scale(1.02);
 }
 
 /* Info */
@@ -99,6 +148,7 @@ h3 {
 .image-wrapper {
   position: relative;
 }
+
 /* Fade KUN udsolgte */
 .is-soldout img {
   opacity: 0.5;
@@ -152,11 +202,14 @@ h2.product-name {
 }
 
 .back-btn {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   margin-top: 2rem;
   padding: 10px 20px;
-  background-color: #ffeded;
-  color: black;
+  background-color: #dde6ed;
+  color: #3e2719;
   border-radius: 5px;
   width: 170px;
 
@@ -164,31 +217,50 @@ h2.product-name {
   color: #3e2719;
 }
 .back-btn:hover {
-  background-color: #fcd2d2;
+  background-color: #cfd9e4;
 }
 
 .buy-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   margin-top: 2rem;
   padding: 10px 20px;
   background-color: #cfc69a;
-  color: black;
+  color: #3e2719;
   border-radius: 5px;
   border: none;
   width: 170px;
 
   font-family: "Oswald", sans-serif;
+  font-size: 16px;
   color: #3e2719;
 }
 .buy-btn:hover {
   background-color: #b9b188;
 }
-
-.logo-img {
-  width: 200px;
-  height: auto;
+/***** PRODUKTLISTE SORTERING KNAPPER *****/
+.no-products h2 {
+  font-size: 24px;
+  color: #3e2719;
+  margin-top: 2rem;
+  font-family: "Oswald", sans-serif;
+}
+.no-products p {
+  font-size: 16px;
+  color: #3e27198e;
+  margin-top: 1rem;
+  font-family: "Oswald", sans-serif;
 }
 
+/***** SLUT *****/
+
 @media (max-width: 800px) {
+  #link-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
   .category-list {
     grid-template-columns: 1fr 1fr;
   }
@@ -200,5 +272,14 @@ h2.product-name {
   .product-detail {
     grid-template-columns: 1fr;
     gap: 2rem;
+  }
+
+  .product-detail img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .product-body {
+    margin-left: 0;
   }
 }
